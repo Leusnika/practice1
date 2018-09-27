@@ -1,0 +1,14 @@
+body{
+    background: black;
+    color: antiquewhite;
+    text-align: center;
+    margin: 10% 40%;
+}
+h2{
+    text-transform: uppercase;
+}
+
+p img{
+    margin-right: 25px;   
+ }  
+     

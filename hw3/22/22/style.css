@@ -1,0 +1,40 @@
+body {
+    background: rgb(134, 19, 19);
+    color: aliceblue;
+    width: 80%;
+}
+
+table {}
+
+.top {
+    text-align: center;
+    box-shadow: -10px 10px;
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    border: none;
+
+}
+
+.aside {
+    background-color: rgb(189, 92, 2);
+    text-align: center;
+}
+
+.news {
+    background-color: rgb(241, 241, 241);
+    text-align: justify;
+    color: black;
+    size: 8;
+}
+
+h5 {
+    background: gray;
+    background-size: 50%;
+}
+
+.section {
+    link: rgb(189, 92, 2);
+}

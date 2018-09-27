@@ -1,0 +1,50 @@
+body {
+    background: black;
+    text-align: center;
+    font-style: normal;
+    font-size: 170%;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5cm;
+
+}
+
+h1 {
+    color: white;
+    font-size: 450%;
+    width: 100%;
+
+}
+
+.re {
+    color: red;
+}
+
+.or {
+    color: orangered;
+}
+
+.ye {
+    color: yellow;
+}
+
+.gr {
+    color: green;
+}
+
+.bl {
+    color: rgb(0, 140, 255);
+}
+
+.blue {
+    color: blue;
+}
+
+.p {
+    color: purple
+}
+
+ul {
+    text-align: left;
+    margin: 12%;
+    font-size: 200%;
+}
