@@ -7,14 +7,12 @@ hr {
     color: grey;
     width: 5%;
     size: 60px;
-
 }
 
 .top {
     text-align: center;
     color: grey;
     padding: 2% 30%;
-
 }
 
 .container {
@@ -27,7 +25,6 @@ hr {
     margin: 5% 10% 5% 10%;
     padding-bottom: 15px;
     display: inline-block;
-
 }
 
 .col-3 {
@@ -35,7 +32,6 @@ hr {
     float: left;
     box-sizing: border-box;
     line-height: 0.3;
-
 }
 
 .col-3 {
@@ -70,15 +66,10 @@ h4 {
 }
 
 .col-4 {
-    width: 30%;
+    width: 33.3333%;
     float: left;
     box-sizing: inherit;
     text-align: center;
-}
-
-.col-4 img {
-
-    width: 40px;
 }
 
 h4 {
@@ -89,6 +80,7 @@ h4 {
     text-align: center;
     color: grey;
     margin: 5%;
+    display: inline-block;
 }
 
 .col-4 a {
@@ -96,20 +88,61 @@ h4 {
     text-decoration: none;
 }
 
-.col-4 a:hover {
-    color: rgb(36, 200, 250);
+.wrapper h4 :hover {
+    color: rgb(37, 131, 253);
 }
 
-a.face1 {
-    background: url(./img/img0.jpg);
+a.design {
+    background: url(./img/icon0.png);
     display: block;
-    /*  Рисунок как блочный элемент */
-    width: 196px;
-    /* Ширина рисунка */
-    height: 265px;
-    /* Высота*/
+    width: 61px;
+    height: 64px;
 }
 
-a.face1:hover {
-    background: url(./img/Twitter.png);
+a.design:hover {
+    background: url(./img/icon0--hover.png);
+}
+
+a.develop {
+    background: url(./img/icon1.png);
+    display: block;
+    width: 66px;
+    height: 65px;
+}
+
+a.develop:hover {
+    background: url(./img/icon1--hover.png);
+}
+
+a.manag {
+    background: url(./img/icon2.png);
+    display: block;
+    width: 55px;
+    height: 64px;
+}
+
+a.manag:hover {
+    background: url(./img/icon2--hover.png);
+}
+
+
+.img1{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.social{
+    background: rgb(14, 176, 182);
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.img1:hover {
+    display:none;
+}
+.social:hover {
+    display: block;
+}
+.social ul li {
+   display: inline-block; 
 }
