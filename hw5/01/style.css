@@ -128,21 +128,18 @@ a.manag:hover {
 
 .img1{
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 250px;
 }
 .social{
     background: rgb(14, 176, 182);
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 250px;
 }
-.img1:hover {
-    display:none;
+.John :hover{
+    display: none;
 }
-.social:hover {
+.social :hover{
     display: block;
-}
-.social ul li {
-   display: inline-block; 
 }

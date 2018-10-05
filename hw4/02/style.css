@@ -10,17 +10,24 @@ text-align: center;
 p{
     text-align: center;
 }
-.img1{
-    margin: 20%;
-    padding: 3%;
-    
-    
+
+.image11{
+    padding: 10% 5% 10% 40%;
+}
+.border img {
+  padding: 30px;
+   border: 200px;
+   border-top-right-radius: 0%;
+   border-top-left-radius: 30%;
+   border-bottom-left-radius: 0%;
+   border-bottom-right-radius: 30%;
+   margin-top: 150px;
+
 }
 .color{
     background-color: orange;
-    background-size: 2cm 2cm;
-    margin-top: 30%;
+    background-size: 20px;
 }
-.image11{
-    padding: 10% 5% 10% 40%;
+img1 {
+    padding: 100px;
 }

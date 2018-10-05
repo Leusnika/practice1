@@ -21,3 +21,8 @@
     color: aliceblue;
     text-align: center;
 }
+
+}
+.top a :hover {
+    color: grey;
+}
