@@ -132,14 +132,47 @@ a.manag:hover {
     height: 250px;
 }
 .social{
-    background: rgb(14, 176, 182);
+    background: rgb(122, 233, 236);
     display: none;
-    width: 270px;
+    width: 200px;
     height: 250px;
 }
-.John :hover{
+.social ul {
+    list-style-type: none;
+}
+.social ul li{
+    display: inline-block;
+    padding-top: 120px;
+    padding-left: 20px;
+    
+}
+.social i{
+    background-color: rgb(173, 200, 226);
+    background-size: 100px;
+}
+
+
+.hover1 :hover img{
+display: none;
+}
+.hover1 :hover .social{
+    display: block;
+}
+.second :hover img{
     display: none;
 }
-.social :hover{
+.second :hover .social{
+    display: block;
+}
+.third :hover img{
+    display: none;
+}
+.third :hover .social{
+    display: block;
+}
+.fourth :hover img{
+    display: none;
+}
+.fourth :hover .social{
     display: block;
 }
