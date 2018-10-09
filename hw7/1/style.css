@@ -177,3 +177,13 @@ input {
     margin-right: 25px;
     margin-left: 25px;
 }
+
+.col {
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
