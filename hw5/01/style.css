@@ -134,23 +134,31 @@ a.manag:hover {
 .social{
     background: rgb(122, 233, 236);
     display: none;
-    width: 200px;
+    width: 210px;
     height: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 51px;
+  
 }
 .social ul {
     list-style-type: none;
 }
 .social ul li{
     display: inline-block;
-    padding-top: 120px;
-    padding-left: 20px;
-    
-}
-.social i{
-    background-color: rgb(173, 200, 226);
-    background-size: 100px;
-}
+    padding-top: 100px;
 
+}
+.social ul li i{
+    background-color: rgb(173, 200, 226);
+   width: 40px;
+   height: 50px;
+   
+}
+.social ul li a{
+    text-align: center;
+   
+}
 
 .hover1 :hover img{
 display: none;

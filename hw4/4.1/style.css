@@ -22,7 +22,6 @@
     text-align: center;
 }
 
-}
-.top a :hover {
-    color: grey;
+.hover :hover a{
+color: grey;
 }
