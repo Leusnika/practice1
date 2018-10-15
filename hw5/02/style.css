@@ -11,23 +11,30 @@ body{
 }
 h3{
     text-transform: uppercase;
+    padding-top: 80px;
 }
 hr{
-    width: 2%;
-    color: white;
-    size: 20px;
+    width: 3%;
+    height: 2px;
+    background-color: white;
+    
 }
 .top{
     color: azure;
     text-align: center;
-    padding: 5% 12%;
+   
 }
-.images{
-    margin: 10% 10% 10% 10%;
-}
+
 .inf{
     text-align: center;
     padding: 5% 12%;
+}
+.inf p{
+    padding-left: 200px;
+    padding-right: 200px; 
+}
+.inf h3{
+    padding-top: 150px;
 }
 h3{
     text-transform: uppercase;
@@ -40,4 +47,11 @@ input{
 textarea {
     resize: none;
     height: 30px;
+}
+.top .topinf{
+    padding-left: 335px;
+    padding-right: 335px;
+}
+.images img{
+margin-right: 35px;
 }
