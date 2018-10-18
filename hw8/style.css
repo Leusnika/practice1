@@ -5,13 +5,13 @@
 body {
     width: 1280px;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'PT Sans', sans-serif;
+    
 }
 
 .container {
     width: 943px;
     height: 809px;
-    background-color: FFFFFF;
+    background-color: #FFFFFF;
     margin: 0 auto;
 
 }
@@ -54,7 +54,7 @@ p {
     padding-top: 134px;
     text-align: center;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     Font-Style: Bold;
     font-size: 12px;
     padding-bottom: 12px;
@@ -66,8 +66,7 @@ p {
 
     text-align: center;
     text-transform: uppercase;
-    font-family: Montserrat;
-    Font-Style: Regular;
+    font-family: 'Montserrat';
     Font-Size: 30px;
     color: #0EC8CB;
     margin-bottom: 0px;
@@ -78,11 +77,10 @@ p {
 }
 
 .information {
+    font-family: 'PT Sans', sans-serif;
     padding-left: 213px;
     text-align: justify;
     text-transform: uppercase;
-    Font-Family: PT Sans;
-    Font-Style: Regular;
     Line-Height: 30px;
     color: #999999;
 }
@@ -97,16 +95,14 @@ p {
 h2 {
     text-align: center;
     text-transform: uppercase;
-    Font-Family: Montserrat;
-    Font-Style: Regular;
+    Font-Family: 'Montserrat';
     Font-Size: 21px;
     color: #1B1B1B;
     padding-top: 54px;
 }
 
 .width-3 p {
-    Font-Family: PT Sans;
-    Font-Style: Regular;
+    Font-Family: 'PT Sans';
     Font-Size: 14px;
     Line-Height: 22px;
     color: #777777;
@@ -168,9 +164,15 @@ img {
     width: 25%;
 }
 
-.width-3 :hover {
+.width-3:hover {
     background-color: #0EC8CB;
     color: white;
+}
+.width-3:hover h2,.width-3:hover p {
+    color: white;
+}
+.width-3 p :hover{
+    color:white;
 }
 
 .table .diamond p {
@@ -180,3 +182,4 @@ img {
 span {
     text-align: center;
 }
+.
