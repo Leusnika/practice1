@@ -96,8 +96,7 @@ p {
     width: 925px;
     height: 423px;
     margin-top: 99px;
-    background-color:#f7f7f7;
-    border: 1px solid lightgrey;
+ 
 }
 
 h2 {
@@ -147,6 +146,8 @@ h2 {
 
 .width-3 {
     width: 25%;
+    background-color:#f7f7f7;
+    border: 1px solid lightgrey;
 }
 
 .width-3:hover {
