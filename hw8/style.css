@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 1280px;
+   
     font-family: 'Montserrat', sans-serif;
     
 }
@@ -13,13 +13,12 @@ body {
     height: 809px;
     background-color: #FFFFFF;
     margin: 0 auto;
-
+   
 }
 
 .row>[class*="width-"] {
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
+  
 }
 
 .clearfix::after {
@@ -38,8 +37,8 @@ body {
 
 p {
     text-align: justify;
-    margin-left: 25px;
-    margin-right: 15px;
+    margin-left: 30px;
+    margin-right: 28px;
     margin-top: 34px;
     margin-bottom: 109px;
 
@@ -51,25 +50,31 @@ p {
 }
 
 .top {
-    padding-top: 134px;
+    padding-top: 117px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat';
     Font-Style: Bold;
     font-size: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 1px;
     letter-spacing: 4.8px;
     color: #898F99;
+    font-weight: 700;
+    line-height: 30px;
+    
+
 }
 
 .headline {
 
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Montserrat';
-    Font-Size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    Font-Size: 25px;
     color: #0EC8CB;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
+    letter-spacing: 4.5px;
+    word-spacing: 2px;
 }
 
 .headline h1 {
@@ -83,13 +88,16 @@ p {
     text-transform: uppercase;
     Line-Height: 30px;
     color: #999999;
+    letter-spacing: 0.1px;
+    font-size: 16px;
 }
 
 .table {
     width: 925px;
     height: 423px;
-    margin-top: 80px;
-    background-color: #ECECEC;
+    margin-top: 99px;
+    background-color:#f7f7f7;
+    border: 1px solid lightgrey;
 }
 
 h2 {
@@ -98,7 +106,8 @@ h2 {
     Font-Family: 'Montserrat';
     Font-Size: 21px;
     color: #1B1B1B;
-    padding-top: 54px;
+    padding-top: 37px;
+    margin-bottom: -16px;
 }
 
 .width-3 p {
@@ -128,30 +137,6 @@ h2 {
     height: 422px;
 }
 
-.graphics img {
-    padding-top: 65px;
-}
-
-.illustrations img {
-    padding-top: 61px;
-}
-
-.diamond img {
-    padding-top: 45px;
-    padding-bottom: -16px;
-}
-
-.anchor img {
-    padding-top: 56px;
-}
-
-img {
-    text-align: center;
-    color: #1B1B1B;
-    padding-top: 56px;
-    padding-left: 76px;
-}
-
 .graphics p {
     margin-top: 40px;
 }
@@ -168,11 +153,14 @@ img {
     background-color: #0EC8CB;
     color: white;
 }
-.width-3:hover h2,.width-3:hover p {
+.width-3:hover h2,.width-3:hover p, .width-3:hover i {
     color: white;
 }
 .width-3 p :hover{
     color:white;
+}
+.col:hover{
+    background-color: #0EC8CB;
 }
 
 .table .diamond p {
@@ -182,4 +170,13 @@ img {
 span {
     text-align: center;
 }
-.
+i {
+    font-size: 55px;
+}
+.anchor-h, .diamond-h, .graphics-h, .illustrations-h{
+    padding-top: 60px;
+    padding-left: 77px;
+}
+.diamond-h h2{
+padding-top: 30px;
+}
