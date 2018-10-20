@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Asap;
+    font-family: 'Asap' , sans-serif;
 }
 
 .container {
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-family: Asap;
+    font-family: 'Asap';
     font-size: 30px;
     line-height: 40px;
     color: #202020;
@@ -40,7 +40,7 @@ h1 span {
 
 .headline2 {
     color: #666;
-    font-family: Karla;
+    font-family: 'Karla';
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -59,6 +59,7 @@ h1 span {
     width: 140px;
     height: 140px;
     border: 1px solid #3b5998;
+    color:#3b5998;
     border-radius: 5px;
     margin-left: 10px;
     margin-right: 20px;
@@ -69,7 +70,8 @@ h1 span {
     display: flex;
     width: 140px;
     height: 140px;
-    border: 1px solid #3b5998;
+    border: 1px solid #1eb6ef;
+    color: #1eb6ef;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -78,7 +80,8 @@ h1 span {
     display: flex;
     width: 140px;
     height: 140px;
-    border: 1px solid #3b5998;
+    border: 1px solid #517fa4;
+    color: #517fa4;
     border-radius: 5px;
     margin-left: 10px;
     margin-right: 20px;
@@ -89,7 +92,8 @@ h1 span {
     display: flex;
     width: 140px;
     height: 140px;
-    border: 1px solid #3b5998;
+    border: 1px solid #585d69;
+    color: #585d69;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -106,7 +110,7 @@ textarea {
     width: 85px;
     height: 13px;
     color: #666;
-    font-family: Asap;
+    font-family: 'Asap';
     font-style: italic;
     font-size: 16px;
     font-weight: 400;
@@ -158,10 +162,6 @@ textarea {
     margin-bottom: 14px;
 }
 
-.col .face :hover {
-    background-color: aqua;
-    cursor: pointer;
-}
 
 .button {
     display: block;
@@ -182,6 +182,7 @@ textarea {
 .button :hover {
     background-color: #2ec06c;
     color: white;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .fa-paper-plane {
@@ -198,8 +199,11 @@ textarea {
     color: #00aced;
 }
 
-.col :hover {
+.face :hover {
     background-color: #ff0084;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 .name :hover {
@@ -224,4 +228,19 @@ textarea {
 
 .area :hover {
     border: 1px solid #2ec06c;
+}
+.name :focus{
+    box-shadow: 2px 2px 2px 2px #2ec06c;
+}
+.lastname :focus{
+    box-shadow: 2px 2px 1px 1px #2ec06c;
+}
+.email :focus{
+    box-shadow: 2px 2px 1px 1px #2ec06c;
+}
+.text :focus{
+    box-shadow: 2px 2px 1px 1px #2ec06c;
+}
+.area :focus{
+    box-shadow: 2px 2px 1px 1px #2ec06c;
 }
