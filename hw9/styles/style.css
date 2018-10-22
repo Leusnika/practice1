@@ -115,7 +115,7 @@ textarea {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    padding-left: 20px;
+   padding-left: 20px;
 }
 
 .row1 {
@@ -128,7 +128,7 @@ textarea {
     height: 50px;
     border: 1px solid #bababa;
     border-radius: 5px;
-    margin-left: 20px;
+   margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -243,4 +243,7 @@ textarea {
 }
 .area :focus{
     box-shadow: 2px 2px 1px 1px #2ec06c;
+}
+.main{
+flex-wrap: wrap;
 }
