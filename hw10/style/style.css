@@ -1,0 +1,153 @@
+ * {
+     box-sizing: border-box;
+
+ }
+
+ .body {
+    margin: 0;
+    padding: 0;
+     width: 641px;
+     height: 13px;
+     font-family: Rufina;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 19px;
+     text-transform: uppercase;
+ }
+
+ .container {
+     width: 1030px;
+ }
+
+ /*header .row{
+    display: flex;
+    flex-direction: row;
+}*/
+ .header-logo {
+     display: block;
+     width: 71px;
+     height: 71px;
+     padding-left: 500px;
+     padding-top: 28px;
+ }
+
+ .menu {
+     padding-top: 56px;
+
+
+ }
+
+ .line-list li {
+
+     list-style-type: none;
+     width: 426px;
+     height: 13px;
+     font-family: Rufina;
+     font-size: 16px;
+     line-height: 1.2;
+     text-transform: uppercase;
+     color: #a19795;
+     font-weight: 400;
+     margin: 0;
+     /* Обнуляем значение отступов */
+     padding: 4px;
+     /* Значение полей */
+ }
+
+ .line-list {
+     display: flex;
+
+ }
+
+ .line-list .nav {
+     display: inline;
+     /* Отображать как строчный элемент */
+     margin-right: 5px;
+     /* Отступ слева */
+     padding: 3px;
+     /* Поля вокруг текста */
+     margin-right: -305px;
+ }
+
+ .menu-list {
+     display: flex;
+     justify-content: center;
+     margin-left: 56px;
+
+    
+ }
+ .shadow{
+    width: 1030px;
+ }
+ .line-list2 li {
+    list-style-type: none;
+    width: 426px;
+    height: 13px;
+    font-family: Rufina;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #0c0c0c;
+    font-weight: 400;
+    margin: 0;
+    /* Обнуляем значение отступов */
+    padding: 4px;
+    /* Значение полей */
+ }
+ .line-list2{
+     display: flex;
+ }
+ .line-list2 .nav2 {
+    display: inline;
+    margin-right: -305px;
+ }
+ .port-menu{
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: 56px;
+ }
+ .exaples{
+    margin-left: -25px;
+ }
+ .col-3 {
+     display: flex;
+ }
+
+ .f-col {
+     display: flex;
+
+     justify-content: flex-start;
+
+ }
+
+ .s-col {
+     display: flex;
+
+     justify-content: flex-start;
+
+ }
+
+ .th-col {
+     display: flex;
+
+     justify-content: flex-start;
+
+ }
+
+ .fr-col {
+     display: flex;
+
+     justify-content: flex-start;
+
+ }
+
+ .port {
+     display: block;
+     padding-top: 30px;
+     width: 230px;
+     height: 233px;
+     padding: 10px;
+     margin-right: 35px;
+     margin-top: 26px;
+ }
