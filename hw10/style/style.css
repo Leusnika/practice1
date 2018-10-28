@@ -4,10 +4,8 @@
  }
 
  .body {
-    margin: 0;
-    padding: 0;
-     width: 641px;
-     height: 13px;
+     margin: 0;
+     padding: 0;
      font-family: Rufina;
      font-size: 16px;
      font-weight: 400;
@@ -15,22 +13,28 @@
      text-transform: uppercase;
      background-image: url(./bg_portfolio.jpg);
      position: top;
+
  }
 
  .container {
-     width: 1030px;
+     max-width: 1060px;
  }
 
- /*header .row{
-    display: flex;
-    flex-direction: row;
-}*/
+ header .row {
+     display: flex;
+     flex-direction: row;
+ }
+
  .header-logo {
      display: block;
      width: 71px;
      height: 71px;
      padding-left: 500px;
      padding-top: 28px;
+ }
+
+ .header-logo:hover {
+     opacity: 0.5;
  }
 
  .menu {
@@ -42,8 +46,7 @@
  .line-list li {
 
      list-style-type: none;
-
-     width: 426px;
+     text-decoration: none;
      height: 13px;
      font-family: Rufina;
      font-size: 16px;
@@ -57,72 +60,314 @@
      /* Значение полей */
  }
 
- .line-list {
+ .line-list a {
      display: flex;
+     text-decoration: none;
+     margin-right: 10px;
+ }
+
+ .line-list {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     font-size: 18px;
+ }
+
+ .nav {
+     display: inline-block;
+     position: relative;
+     cursor: pointer;
 
  }
 
- .line-list .nav {
-     display: inline;
-     /* Отображать как строчный элемент */
-     margin-right: 5px;
-     /* Отступ слева */
-     padding: 3px;
-     /* Поля вокруг текста */
-     margin-right: -305px;
+ .nav:after {
+     margin-top: 20px;
+
+     bottom: 2px;
+     left: 19px;
+     width: calc(100% - 5px * 2);
+     height: 2px;
+     background-color: #524642;
+     display: block;
+     content: '';
+     opacity: 0;
+     transform: translateX;
+     transition: 1s;
+ }
+
+ .nav li {
+     transition: 1s;
+ }
+
+ .nav:hover li {
+     font-weight: 700;
+     color: #353130;
+ }
+
+ .nav--active:after,
+ .nav:hover:after {
+     opacity: 1;
+     transform: translateY(0);
  }
 
  .menu-list {
      display: flex;
-     justify-content: center;
-     margin-left: 56px;
+     margin-left: 250px;
+ }
 
-    
+ .port-menu {
+     margin-left: 200px;
  }
- .shadow{
-    width: 1030px;
+
+ .line-list2 {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+
+     font-size: 18px;
  }
+
  .line-list2 li {
-    list-style-type: none;
-    width: 426px;
-    height: 13px;
-    font-family: Rufina;
-    font-size: 16px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: #0c0c0c;
-    font-weight: 400;
-    margin: 0;
-    /* Обнуляем значение отступов */
-    padding: 4px;
-    /* Значение полей */
+     list-style-type: none;
+     text-decoration: none;
+     height: 13px;
+     font-family: Rufina;
+     font-size: 16px;
+     line-height: 1.2;
+     text-transform: uppercase;
+     color: #0c0c0c;
+     font-weight: 400;
+     margin: 0;
+     /* Обнуляем значение отступов */
+     padding: 4px;
+     /* Значение полей */
  }
- .line-list2{
+
+ .line-list2 {
      display: flex;
  }
- .line-list2 .nav2 {
-    display: inline;
-    margin-right: -305px;
- }
- .port-menu{
-    display: flex;
-    justify-content: center;
-    margin-left: -100px;
-    margin-top: 56px;
+
+ .line-list2 a {
+     text-decoration: none;
  }
 
- .port {
+ .line-list2 li {
      display: block;
-     padding-top: 30px;
-     width: 190px;
-     height: 190px;
-     padding: 10px;
-     margin-right: 35px;
-     margin-top: 26px;
+     height: 25px;
  }
- .exaples{
+
+ .nav2 {
+     margin-right: 10px;
+     transition: 1s;
+ }
+
+ .nav2:hover {
+     background-color: #aa958e;
+ }
+
+ .nav2 li {
+     transition: 1s;
+ }
+
+ .nav2 li:hover {
+     color: rgb(248, 246, 246);
+ }
+
+ .port-menu {
+     display: flex;
+     justify-content: center;
+     margin-top: 56px;
+ }
+
+
+ .exaples {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     padding-bottom: 40px;
+ }
+
+ .ex img {
+     padding: 10px;
+
+ }
+
+
+ .hover {
+     display: none;
+
+ }
+
+ .ex:hover .port {
+     display: none;
+
+ }
+
+ .ex:hover:hover .hover {
+     display: block;
+     border: 2px solid #474241;
+
+ }
+
+ .main-footer {
      display: flex;
      flex-direction: row;
+     padding-bottom: 30px;
+     background-color: #605a58;
+
+ }
+
+ .footer-logo {
+     display: block;
+     width: 111px;
+     height: 111px;
+     margin-right: 10px;
+ }
+
+ .name h3 {
+     color: white;
+     font-family: Rufina;
+     font-size: 28px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
+
+ .adress img {
+     margin-right: 5px;
+ }
+
+ .adress a{
+     opacity: 0.5;
+     color: white;
+     font-family: OpenSans;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.25;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ .contacts {
+     width: 60%;
+     display: flex;
      flex-wrap: wrap;
+     padding-left: 40px;
+     padding-right: 10px;
+ }
+
+ .inf {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: flex-start;
+ }
+
+ .ganesh {
+     width: 50%;
+ }
+
+ .soc-img {
+     display: inline-block;
+     position: relative;
+     cursor: pointer;
+
+
+
+ }
+
+ .social li {
+     list-style-type: none;
+     text-decoration: none;
+     color: #e2d7d3;
+     ;
+     background-color: #474241;
+     background-size: 50px;
+     border-radius: 50%;
+     justify-content: center;
+     align-items: center;
+     width: 35px;
+     height: 35px;
+
+
+ }
+
+ .social li:hover {
+     background-color: #f79440;
+     border: 0.5px solid #080808;
+ }
+
+ .soc-img i {
+     padding-left: 11px;
+     padding-top: 8px;
+     color: rgb(245, 234, 234);
+ }
+
+ .social ul {
+     padding-left: 10px;
+ }
+
+ .about {
+     padding-right: 20px;
+     text-align: justify;
+     opacity: 0.66;
+     color: white;
+     font-family: OpenSans;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 1.5;
+ }
+
+ .skills {
+     color: white;
+     font-family: Rufina;
+     font-size: 28px;
+     font-weight: 400;
+     line-height: 1.1;
+ }
+
+ .last-footer {
+     display: flex;
      justify-content: space-around;
+     flex-direction: row;
+     padding-bottom: 10px;
+     background-color: #474241;
+ }
+
+ .last-menu .line-list li {
+     font-family: Rufina;
+     font-size: 12px;
+     font-weight: 400;
+     line-height: 1.6;
+     text-transform: uppercase;
+     color: #878381;
+ }
+
+ .last-menu {
+     margin-left: -140px;
+ }
+
+ .last-menu .nav:after {
+     margin-top: 10px;
+     height: 1px;
+     background-color: #faf7f6;
+ }
+
+ .last-menu .nav:hover li {
+     font-weight: 700;
+     color: #fdfcfc;
+ }
+
+ .last-menu .nav--active:after,
+ .last-menu.nav:hover:after {
+     opacity: 1;
+     transform: translateY(0);
+ }
+ .rights{
+    opacity: 0.5;
+    color: white;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-top: 10px;
  }
