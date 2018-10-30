@@ -395,7 +395,7 @@
     background-color: #DFDEDE;
     position: relative; top: 18px;
  }
- .progress-bar :hover {
+ .progress-bar:hover span {
     background-color: #F79440;
     height: 20px;
     display: block;
