@@ -378,3 +378,25 @@
     padding-left: 50px;
     padding-top: 10px;
  }
+ .progress-bar {
+    width: 264px;
+    display: block;
+    height: 20px;
+    background-color: #908C8A;
+    position: relative; top: 18px;
+ }
+ .progress-bar > span {
+    background-color: #474241;
+    height: 20px;
+    display: block;
+ }
+ .progress-bar:hover {
+    display: block;
+    background-color: #DFDEDE;
+    position: relative; top: 18px;
+ }
+ .progress-bar :hover {
+    background-color: #F79440;
+    height: 20px;
+    display: block;
+ }
