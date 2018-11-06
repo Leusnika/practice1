@@ -179,8 +179,7 @@ body {
 }
 
 .about .row {
-    margin: auto -10px;
-    padding-left: 95px;
+    margin: -2px 68px;
 }
 
 .col-about {
@@ -244,9 +243,8 @@ body {
     font-weight: 400;
     line-height: 1.6;
     align-items: center;
-    width: 42%;
-
-    /*margin-left: -28px;*/
+    width: 46%;
+    margin-left: -16px;
 }
 
 .about__buton1,
@@ -349,6 +347,9 @@ body {
     width: 100%;
     padding-left: 75px;
     margin-top: -36px;
+}
+.col-img{
+   margin-left: 15px;  
 }
 
 /*____________________4*/
@@ -594,7 +595,7 @@ font-family: 'Asap';
 /*_______6*/
 
 .contacts{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     margin-top: 40px;
 }
 .container {
@@ -605,6 +606,8 @@ font-family: 'Asap';
 }
 .main{
     display: flex;
+    margin-left: 33px;
+    margin-top: -3px;
 }
 
 .main-inf {
@@ -620,11 +623,13 @@ h1 {
     color: #202020;
     font-weight: 400;
 text-align: center;
+padding-left: 11px;
 }
 
 h1 span {
     color: #2ec06c;
     font-weight: 700;
+    
 }
 .headline1{
     padding-top: 32px;
@@ -759,7 +764,18 @@ h1 span {
     margin-left: 0px;
     padding-top: 31px;
 }
-input,
+input{
+    width: 85px;
+    height: 13px;
+    color: #666;
+    font-family: 'Asap';
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+   padding-left: 20px;
+}
+
 textarea {
     width: 85px;
     height: 13px;
@@ -770,7 +786,7 @@ textarea {
     font-weight: 400;
     line-height: 30px;
    padding-left: 20px;
-   padding-top: 10px;
+   padding-top: 16px;
 }
 
 .row1 {
@@ -899,7 +915,7 @@ font-size: 16px;
 color: #2f2f2f;
 font-style: italic;
 padding-top: 3px;
-padding-left: 100px;
+padding-left: 148px;
 }
 
 .footer b{
