@@ -1,24 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Karla:400,700');
+
 * {
     box-sizing: border-box;
-
+    min-height: 0;
+    min-width: 0;
 }
 
 body {
-    font-family: 'Asap' , sans-serif;
     margin: 0;
-    padding: 0;
-   background-image: url(../styles/3.jpg);
-    
+    font-family: 'Asap', sans-serif;
+  /* background-image: url(../css/SEFolio-check.png);
+    background-position: top;
+    opacity: 0.5;*/
+}
+
+
+.header {
+    background-image: url(../images/Home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 640px;
+    display: flex;
+
 }
 
 .container {
-    
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+.contacts {
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.container {
+
     flex-wrap: wrap;
     margin: 0 auto;
     width: 960px;
 }
-.main{
+
+.contacts__main {
     display: flex;
+    margin-left: 33px;
+    margin-top: -3px;
 }
 
 .main-inf {
@@ -33,43 +63,43 @@ h1 {
     line-height: 40px;
     color: #202020;
     font-weight: 400;
-text-align: center;
+    text-align: center;
+    padding-left: 11px;
 }
 
 h1 span {
     color: #2ec06c;
     font-weight: 700;
+
 }
-.headline1{
+
+.contacts__headline1 {
     padding-top: 32px;
-    padding-left: 62px;
+
 }
-.headline2 {
+
+.contacts__headline2 {
     color: rgb(151, 144, 144);
     font-family: 'Karla', sans-serif;
     font-size: 19px;
     font-weight: 300;
     text-align: center;
     margin-top: -21px;
-    
-}
-/*h5 span {
-    letter-spacing: -0.1em;
-    font-size: 19px;
-    font-family: 'Asap';
-}*/
 
-.social {
+}
+
+
+.contacts__social {
     display: flex;
     flex-wrap: wrap;
     height: 301px;
     width: 300px;
     margin-top: 31px;
-    margin-left: 51px;
+    margin-left: 37px;
 }
 
 
-.face {
+.contacts__face {
     display: flex;
     width: 140px;
     height: 140px;
@@ -78,21 +108,24 @@ h1 span {
     cursor: pointer;
     font-size: 53px;
     padding-top: 39px;
-    padding-left: 56px;  
+    padding-left: 56px;
 }
-.face a{
-    color:#3b5998;
+
+.contacts__face a {
+    color: #3b5998;
 }
-.face:hover{
+
+.contacts__face:hover {
     background-color: #3b5998;
     border: none;
     border-radius: 5px;
 }
-.face:hover a {
+
+.contacts__face:hover a {
     color: #fff;
 }
 
-.twit {
+.contacts__twit {
     display: flex;
     width: 140px;
     height: 140px;
@@ -104,19 +137,22 @@ h1 span {
     padding-left: 43px;
     margin-left: -5px;
 }
-.twit a{
+
+.contacts__twit a {
     color: #00aced;
 }
-.twit:hover{
-    background-color:  #00aced;
+
+.contacts__twit:hover {
+    background-color: #00aced;
     border: none;
     border-radius: 5px;
 }
-.twit:hover a {
+
+.contacts__twit:hover a {
     color: #fff;
 }
 
-.insta {
+.contacts__insta {
     display: flex;
     width: 140px;
     height: 140px;
@@ -129,19 +165,22 @@ h1 span {
     margin-top: 17px;
     margin-left: -2px;
 }
-.insta a {
+
+.contacts__insta a {
     color: #517fa4;
 }
-.insta:hover{
+
+.contacts__insta:hover {
     background-color: #517fa4;
     border: none;
     border-radius: 5px;
 }
-.insta:hover a {
+
+.contacts__insta:hover a {
     color: #fff;
 }
 
-.dribbble {
+.contacts__dribbble {
     display: flex;
     width: 140px;
     height: 140px;
@@ -154,26 +193,42 @@ h1 span {
     margin-top: 17px;
     margin-left: -5px;
 }
-.dribbble a {
+
+.contacts__dribbble a {
     color: #ff0084;
 }
-.dribbble:hover{
+
+.contacts__dribbble:hover {
     background-color: #ff0084;
     border: none;
     border-radius: 5px;
 }
-.dribbble:hover a {
+
+.contacts__dribbble:hover a {
     color: #fff;
 }
 
-.row3{
+.contacts__row3 {
     margin-left: 20px;
 }
-.form{
+
+.contacts__form {
     margin-left: 0px;
     padding-top: 31px;
 }
-input,
+
+input {
+    width: 85px;
+    height: 13px;
+    color: #666;
+    font-family: 'Asap';
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
 textarea {
     width: 85px;
     height: 13px;
@@ -183,15 +238,15 @@ textarea {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-   padding-left: 20px;
-   padding-top: 10px;
+    padding-left: 20px;
+    padding-top: 16px;
 }
 
-.row1 {
+.contacts__row1 {
     display: flex;
 }
 
-.row1 input {
+.contacts__row1 input {
     width: 300px;
     height: 50px;
     border: 1px solid #bababa;
@@ -201,57 +256,57 @@ textarea {
 
 
 
-.row2 {
+.contacts__row2 {
     display: flex;
-   
+
 }
 
-.row2 input {
+.contacts__row2 input {
     width: 300px;
     height: 50px;
     border: 1px solid #bababa;
     border-radius: 5px;
-    
+
     margin-bottom: 20px;
     margin-top: -1px;
 }
-.text{
-    margin-left: -14px;
-}
-.row3 {
-    display: flex;
-  
+.contacts__text{
+    margin-left: -20px;
 }
 
-.row3 textarea {
+
+.contacts__row3 {
+    display: flex;
+}
+
+.contacts__row3 textarea {
     width: 100%;
     height: 161px;
     border: 1px solid #bababa;
     border-radius: 5px;
-    
     margin-bottom: 14px;
 }
 
 
-.button {
+.contacts__button {
     display: block;
     width: 40px;
     height: 161px;
     background-color: #2ec06c;
     border-radius: 0px 5px 5px 0px;
     cursor: pointer;
-    margin-left: -25px;
-    margin-top: -2px;
+    margin-left: -40px;
+   
 }
 
-.button i {
+.contacts__button i {
     padding-top: 67px;
     padding-inline-start: 8px;
     color: white;
 
 }
 
-.button :hover {
+.contacts__button :hover {
     background-color: #1b5533;
     color: white;
     border-radius: 0px 5px 5px 0px;
@@ -263,56 +318,36 @@ textarea {
     width: 40px;
 }
 
-.name{
-    padding-left: 4px;
-}
-.name :hover {
+
+
+.contacts__name :hover {
     border: 1px solid #2ec06c;
 }
 
-.name :focus {
+.contacts__name :focus {
     border: 1px solid #2ec06c;
 }
 
-.lastname{
-    margin-left: -23px;
+.contacts__lastname {
+    margin-left: -30px;
     padding-left: 8px;
 }
-.lastname :hover {
-    border: 1px solid #2ec06c;
-}
-.imail{
-    margin-top: 1px;
-    margin-left: 3px;
-}
-.email :hover {
+
+.contacts__lastname :hover {
     border: 1px solid #2ec06c;
 }
 
-.text :hover {
+
+
+.contacts__email :hover {
     border: 1px solid #2ec06c;
 }
 
-.area :hover {
+.contacts__text :hover {
     border: 1px solid #2ec06c;
 }
-.name :focus{
-    box-shadow: 2px 2px 2px 2px #2ec06c;
-}
-.lastname :focus{
-    box-shadow: 2px 2px 1px 1px #2ec06c;
-}
-.email :focus{
-    box-shadow: 2px 2px 1px 1px #2ec06c;
-}
-.text :focus{
-    box-shadow: 2px 2px 1px 1px #2ec06c;
-}
-.area{
-    margin-left: -2px;
-    margin-top: -2px;
-}
-.area :focus{
-    box-shadow: 2px 2px 1px 1px #2ec06c;
+
+.contacts__area :hover {
+    border: 1px solid #2ec06c;
 }
 
