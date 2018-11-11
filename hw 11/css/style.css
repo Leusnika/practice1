@@ -22,6 +22,7 @@ body {
     background-position: top;
     min-height: 640px;
     display: flex;
+    
 
 }
 
@@ -30,6 +31,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+   
 
 }
 
@@ -37,6 +39,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+   
 }
 
 .header__logo {
@@ -48,7 +52,74 @@ body {
     line-height: 1.9px;
     color: white;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+   
 }
+
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute;  /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidepanel */
+    position: absolute;
+    font-family: 'Asap', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-size: 18px;
+    color: #c4c4c4;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/*_______________________________________*/
 
 .header__logo a {
     text-decoration: none;

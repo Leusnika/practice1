@@ -19,7 +19,23 @@
     <div class="header">
         <div class="container">
             <div class="header__logo">
-                <a href="javascript:void(0)"> <span>SE</span>FOLIO</a>
+        <div class="header__left">
+                <a href="javascript:void(0)"> <span>SE</span>FOLIO</a></div>
+                <div class="header__right">
+                <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">home</a>
+                        <a href="#">about me</a>
+                        <a href="#">services</a>
+                        <a href="#">portfolio</a>
+                        <a href="#">hire me</a>
+                      </div>
+                      
+                      <button class="openbtn" onclick="openNav()">&#9776; </button> 
+                      
+
+                      </div>
+
             </div>
             <div class="header__hello">
                 <h3>Hello, I'm <b>Eftakher</b><br> A <b>FrontEnd</b> designer</h3>
@@ -352,6 +368,17 @@
             <p>&copy; 2014 <a href="javascript:void(0)"><b>SEFolio</b></a> Design by <b>Eftakher Alam</b></p>
         </div>
     </div>
+
+    <script>
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "260px";
+}
+
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
 </body>
 
 </html>

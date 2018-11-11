@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+   
+
+}
+.header{
+   background-image: url(../img/Header_background2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 803px;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    width: 458px;
+height: 139px;
+color: #fdfefd;
+font-family: Raleway;
+font-size: 150px;
+font-weight: 200;
+line-height: 22px;
+text-transform: uppercase;
+text-align: center;
+text-decoration: none;
+}
+.header__logo{
+    margin-top: 190px;
+    margin-left: 500px;
+}
+
+.header__nav {
+    height: 14.8%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+   opacity: 0.8;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  
+}
+
+/* The sidepanel links */
+.header__nav a {
+    float: left;
+    text-align: right;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    color: #8c8d8c;
+font-family: "Book Antiqua";
+font-size: 20px;
+font-weight: 400;
+line-height: 22px;
+    
+}
+
+/* When you mouse over the navigation links, change their color */
+.header__nav a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.header__nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:inherit;
+  color: white;
+  padding-top: 24px;
+  border: none;
+}
+.openbtn :active{
+    display: none;
+}
+
+.header__menunav{
+    display: flex;
+    justify-content: flex-end;
+}
+.header__button{
+    width: 9%;
+}
+
+.header__social {
+    
+    height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 50px;
+   margin-left: -60px;
+
+}
+
+
+.header__social a {
+   display: block;
+    text-decoration: none;
+    padding-right: 50px;
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #8c8d8c;
+font-family: 'Book Antiqua';
+font-size: 20px;
+font-weight: 400;
+transform: rotate(-90deg);
+
+    
+}
+
+.header__social a:hover {
+    text-decoration: underline;
+    color: #f1f1f1;
+}
+
+
+.about{
+position: relative;
+display: flex;
+}
+.about__left{
+    position: absolute;
+    right: 20px;
+    background-color: white;
+}
+
