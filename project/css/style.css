@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 .container {
     max-width: 1170px;
@@ -22,6 +22,7 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 803px;
+    margin-bottom: 200px;
 }
 
 .header__navigation{
@@ -41,7 +42,6 @@ text-align: center;
 text-decoration: none;
 }
 .header__logo{
-    margin-top: 190px;
     margin-left: 500px;
 }
 
@@ -149,14 +149,358 @@ transform: rotate(-90deg);
     color: #f1f1f1;
 }
 
+.header__img{
+    max-width: 287px;
+    max-height: 287px;
+    background-color: #cdcdcd;
+}
 
+/*slide*/
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 1171px;
+max-height: 285px;
+background-color: #fdfefd;
+border: 1px solid white;
+margin-top: 100px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  .slider__item{
+    
+    max-width: 287px;
+    max-height: 287px;
+  }
+
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .slider__control_show {
+    display: flex;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+  }
+
+  .slider__control_left {
+    left: 0;
+  }
+
+  .slider__control_right {
+    right: 0;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  .slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+  }
+
+/* about___________________________________*/
 .about{
 position: relative;
 display: flex;
+margin-bottom: 200px;
 }
 .about__left{
     position: absolute;
     right: 20px;
     background-color: white;
 }
+.about__title{
+    padding-left: 364px;
+}
+.about__title h3{
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+}
 
+.about__title h2{
+    color: black;
+font-family: 'Raleway';
+font-size: 40px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.about__left{
+    font-family: "Book Antiqua";
+line-height: 32px;
+color: #000100;
+font-size: 20px;
+font-weight: 400;
+}
+.about__left span{
+    color: #010e19;
+font-size: 26px;
+font-style: italic;
+}
+
+/*product__________________________________________*/
+
+.product{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.product__title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.product__title h3{
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 32px;
+}
+.product__title h2{
+    color: black;
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.product__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.product__price{
+    color: #fefefe;
+    font-family: "Book Antiqua";
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+.product__name{
+    color: #fefefe;
+font-family: 'Raleway';
+font-size: 30px;
+font-weight: 500;
+line-height: 32px;
+text-transform: uppercase;
+}
+.product__category{
+    color: #fefefe;
+font-family: "Book Antiqua";
+font-size: 25px;
+font-style: italic;
+line-height: 32px;
+text-decoration: underline;
+}
+.product__img{
+    display: block;
+    width: 459px;
+height: 700px;
+background-color: #dadada;
+transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  position: relative;
+  cursor: pointer;
+}
+.product__img .image{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.product__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    /*padding-top: 30px;
+    padding-left: 20px;*/
+   display: block;
+   justify-content: center;
+    
+  }
+
+  .product__img:hover .product__overlay {
+    opacity: 0.5;
+  }
+
+  .product__text{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  text-align: center;
+  outline: 1px solid white;
+  outline-offset: -15px;
+  border-radius: -10%;
+  align-items: center;
+padding-top: 50%;
+
+}
+
+/*partners______________________________*/
+
+.partners{
+    margin-bottom: 300px;
+}
+.partners__title {
+text-align: center;
+margin-bottom: 100px;
+}
+.partners__title h3{
+    color: #8c8d8c;
+font-family: "Book Antiqua";
+font-size: 30px;
+font-style: italic;
+line-height: 32px;
+}
+
+.partners__title h2{
+    color: black;
+font-family: 'Raleway';
+font-size: 40px;
+font-weight: 500;
+line-height: 32px;
+text-transform: uppercase;
+}
+.partners__title p{
+    color: black;
+font-family: "Book Antiqua";
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: justify;
+text-align: center;
+}
+.partners__scroll{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 1163px;
+height: 102px;
+}
+.partners__scroll a:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.partners__scroll img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.partners__scroll img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*call_______________*/
+.call{
+    background-image: url(../img/call.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 1927px;
+min-height: 1182px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 200px;
+}
+.call h3{
+    color: white;
+font-family: "Book Antiqua";
+font-size: 50px;
+font-style: italic;
+line-height: 32px;
+}
+.call h2{
+    color: white;
+font-family: 'Raleway';
+font-size: 60px;
+font-weight: 500;
+line-height: 32px;
+text-transform: uppercase;
+}
+.call p{
+    color: white;
+font-family: "Book Antiqua";
+font-size: 30px;
+font-weight: 400;
+line-height: 48px;
+}
+.call__button{
+    width: 300px;
+height: 100px;
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.call__button a{
+color: white;
+font-family: 'Raleway';
+font-size: 30px;
+font-weight: 500;
+line-height: 32px;
+text-transform: uppercase;
+text-decoration: none;
+}
