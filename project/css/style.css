@@ -7,60 +7,86 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    /* background-image: url('./DBpng.png');*/
+    max-width: 100%;
+    background-position: top;
 }
+
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+
+}
+
+.header .container {
    
 
 }
-.header{
-   background-image: url(../img/Header_background2.png);
+
+.header {
+    background-image: url(../img/Header_background2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 803px;
-    margin-bottom: 200px;
+    margin-bottom: 222px;
+    position: relative;
+}
+.header__title{
+    animation-duration: 4s;
+  animation-delay: 0.2s;
 }
 
-.header__navigation{
+.header__navigation {
     display: flex;
     justify-content: space-between;
 }
-.logo a{
+
+.logo a {
     width: 458px;
-height: 139px;
-color: #fdfefd;
-font-family: Raleway;
-font-size: 150px;
-font-weight: 200;
-line-height: 22px;
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
+    height: 139px;
+    color: #fdfefd;
+    font-family: Raleway;
+    font-size: 150px;
+    font-weight: 200;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
 }
-.header__logo{
-    margin-left: 500px;
+
+.header__logo {
+    position: absolute;
+    top: 323px;
+    left: 684px;
+    letter-spacing: 0.9em;
 }
 
 .header__nav {
-    height: 14.8%; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-   opacity: 0.8;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 14.8%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    opacity: 0.8;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-  
+
 }
 
 /* The sidepanel links */
@@ -74,11 +100,11 @@ text-decoration: none;
     align-items: center;
     transition: 0.3s;
     color: #8c8d8c;
-font-family: "Book Antiqua";
-font-size: 20px;
-font-weight: 400;
-line-height: 22px;
-    
+    font-family: "Book Antiqua";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -91,57 +117,62 @@ line-height: 22px;
 .header__nav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 12px;
+    top: 30px;
+    right: 50px;
+    font-size: 60px;
     margin-left: 50px;
 }
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color:inherit;
-  color: white;
-  padding-top: 24px;
-  border: none;
+    font-size: 43px;
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 32px;
+    right: 50px;
 }
-.openbtn :active{
+
+.openbtn :active {
     display: none;
 }
 
-.header__menunav{
+.header__menunav {
     display: flex;
     justify-content: flex-end;
 }
-.header__button{
+
+.header__button {
     width: 9%;
 }
 
 .header__social {
-    
+    position: absolute;
     height: 400px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   margin-top: 50px;
-   margin-left: -60px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 173px;
+    left: -5px;
 }
 
 
 .header__social a {
-   display: block;
+    display: block;
     text-decoration: none;
     padding-right: 50px;
-    transition: all 0.3s ease; /* Add transition for hover effects */
+    transition: all 0.3s ease;
+    /* Add transition for hover effects */
     color: #8c8d8c;
-font-family: 'Book Antiqua';
-font-size: 20px;
-font-weight: 400;
-transform: rotate(-90deg);
+    font-family: 'Book Antiqua';
+    font-size: 20px;
+    font-weight: 400;
+    transform: rotate(-90deg);
 
-    
+
 }
 
 .header__social a:hover {
@@ -149,35 +180,41 @@ transform: rotate(-90deg);
     color: #f1f1f1;
 }
 
-.header__img{
+.header__img {
     max-width: 287px;
     max-height: 287px;
     background-color: #cdcdcd;
 }
 
+.header__list {
+    padding-right: 118px;
+    
+}
+
 /*slide*/
 .slider {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     max-width: 1171px;
-max-height: 285px;
-background-color: #fdfefd;
-border: 1px solid white;
-margin-top: 100px;
-  }
+    max-height: 285px;
+    background-color: #fdfefd;
+    border: 1px solid white;
+    top: 638px;
+    right: 0;
+}
 
-  .slider__wrapper {
+.slider__wrapper {
     display: flex;
     transition: transform 0.6s ease;
-  }
+}
 
-  .slider__item{
-    
+.slider__item {
+
     max-width: 287px;
     max-height: 287px;
-  }
+}
 
-  .slider__control {
+.slider__control {
     position: absolute;
     top: 50%;
     display: none;
@@ -187,131 +224,157 @@ margin-top: 100px;
     color: #fff;
     text-align: center;
     opacity: 0.5;
-    height: 50px;
+    height: 100%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, .5);
-  }
+}
 
-  .slider__control_show {
+.slider__control_show {
     display: flex;
-  }
+}
 
-  .slider__control:hover,
-  .slider__control:focus {
+.slider__control:hover,
+.slider__control:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: .9;
-  }
+}
 
-  .slider__control_left {
+.slider__control_left {
     left: 0;
-  }
+}
 
-  .slider__control_right {
+.slider__control_right {
     right: 0;
-  }
+}
 
-  .slider__control::before {
+.slider__control::before {
     content: '';
     display: inline-block;
     width: 20px;
     height: 20px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-  }
+}
 
-  .slider__control_left::before {
+.slider__control_left::before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  }
+}
 
-  .slider__control_right::before {
+.slider__control_right::before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }
+}
 
-  .slider__item>div {
+.slider__item>div {
     line-height: 250px;
     font-size: 100px;
     text-align: center;
-  }
+}
 
 /* about___________________________________*/
-.about{
-position: relative;
-display: flex;
-margin-bottom: 200px;
+.about {
+    position: relative;
+    display: flex;
+    margin-bottom: 62px;
 }
-.about__left{
+
+.about__left {
     position: absolute;
     right: 20px;
     background-color: white;
 }
-.about__title{
-    padding-left: 364px;
+
+.about__title {
+    padding-left: 430px;
+    margin-top: -6px;
+    letter-spacing: 0.09em;
 }
-.about__title h3{
+
+.about__title h3 {
     color: #8c8d8c;
     font-family: "Book Antiqua";
     font-size: 30px;
     font-style: italic;
+    margin-top: 0;
 }
 
-.about__title h2{
+.about__title h2 {
     color: black;
-font-family: 'Raleway';
-font-size: 40px;
-font-weight: 500;
-text-transform: uppercase;
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: -20px;
+    margin-top: -4px;
+    letter-spacing: 0.1em;
 }
-.about__left{
+
+.about__left {
     font-family: "Book Antiqua";
-line-height: 32px;
-color: #000100;
-font-size: 20px;
-font-weight: 400;
+    line-height: 32px;
+    color: #000100;
+    font-size: 20px;
+    font-weight: 400;
 }
-.about__left span{
+
+.about__left span {
     color: #010e19;
-font-size: 26px;
-font-style: italic;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.about__lorem {
+    padding-top: 50px;
+    padding-left: 40px;
+
 }
 
 /*product__________________________________________*/
 
-.product{
+.product {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 106px;
 }
-.product__title{
+
+.product__title {
     text-align: center;
     margin-bottom: 100px;
 }
-.product__title h3{
+
+.product__title h3 {
     color: #8c8d8c;
     font-family: "Book Antiqua";
     font-size: 30px;
     font-style: italic;
     line-height: 32px;
+    letter-spacing: 0.04em;
 }
-.product__title h2{
+
+.product__title h2 {
     color: black;
     font-family: 'Raleway';
     font-size: 40px;
     font-weight: 500;
     line-height: 32px;
     text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin-left: 5px;
+    margin-bottom: -3px;
 }
-.product__box{
+
+.product__box {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    position: relative;
 
 }
 
-.product__price{
+.product__price {
     color: #fefefe;
     font-family: "Book Antiqua";
     font-size: 45px;
@@ -319,37 +382,42 @@ font-style: italic;
     text-transform: uppercase;
     line-height: 32px;
 }
-.product__name{
+
+.product__name {
     color: #fefefe;
-font-family: 'Raleway';
-font-size: 30px;
-font-weight: 500;
-line-height: 32px;
-text-transform: uppercase;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
 }
-.product__category{
+
+.product__category {
     color: #fefefe;
-font-family: "Book Antiqua";
-font-size: 25px;
-font-style: italic;
-line-height: 32px;
-text-decoration: underline;
+    font-family: "Book Antiqua";
+    font-size: 25px;
+    font-style: italic;
+    line-height: 32px;
+    text-decoration: underline;
 }
-.product__img{
+
+.product__img {
     display: block;
-    width: 459px;
-height: 700px;
-background-color: #dadada;
-transition: .5s ease;
-  backface-visibility: hidden;
-  opacity: 1;
-  position: relative;
-  cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+    cursor: pointer;
 }
-.product__img .image{
-position: absolute;
-width: 100%;
-height: 100%;
+
+.product__img .image {
+
+    width: 100%;
+    height: 100%;
 }
 
 .product__overlay {
@@ -365,142 +433,424 @@ height: 100%;
     background-color: black;
     /*padding-top: 30px;
     padding-left: 20px;*/
-   display: block;
-   justify-content: center;
-    
-  }
+    display: block;
+    justify-content: center;
 
-  .product__img:hover .product__overlay {
+}
+
+.product__img:hover .product__overlay {
     opacity: 0.5;
-  }
+}
 
-  .product__text{
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  /*-webkit-transform: translate(-50%, -50%);
+.product__text {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*-webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);*/
-  text-align: center;
-  outline: 1px solid white;
-  outline-offset: -15px;
-  border-radius: -10%;
-  align-items: center;
-padding-top: 50%;
+    text-align: center;
+    outline: 1px solid white;
+    outline-offset: -15px;
+    border-radius: -10%;
+    align-items: center;
+    padding-top: 50%;
 
 }
 
 /*partners______________________________*/
 
-.partners{
-    margin-bottom: 300px;
-}
-.partners__title {
-text-align: center;
-margin-bottom: 100px;
-}
-.partners__title h3{
-    color: #8c8d8c;
-font-family: "Book Antiqua";
-font-size: 30px;
-font-style: italic;
-line-height: 32px;
+.partners {
+    margin-bottom: 88px;
 }
 
-.partners__title h2{
-    color: black;
-font-family: 'Raleway';
-font-size: 40px;
-font-weight: 500;
-line-height: 32px;
-text-transform: uppercase;
+.partners__title {
+    text-align: center;
+    margin-bottom: 100px;
 }
-.partners__title p{
-    color: black;
-font-family: "Book Antiqua";
-font-size: 20px;
-font-weight: 400;
-line-height: 32px;
-text-align: justify;
-text-align: center;
+
+.partners__title h3 {
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    margin-left: 19px;
 }
-.partners__scroll{
+
+.partners__title h2 {
+    color: black;
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 53px;
+}
+
+.partners__title p {
+    color: black;
+    font-family: "Book Antiqua";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+    text-align: center;
+    letter-spacing: 0.14em;
+}
+
+.partners__scroll {
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: space-around;
     width: 1163px;
-height: 102px;
+    height: 102px;
 }
+
 .partners__scroll a:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
 .partners__scroll img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 .partners__scroll img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*call_______________*/
-.call{
+.call {
     background-image: url(../img/call.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 1927px;
-min-height: 1182px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 200px;
-}
-.call h3{
-    color: white;
-font-family: "Book Antiqua";
-font-size: 50px;
-font-style: italic;
-line-height: 32px;
-}
-.call h2{
-    color: white;
-font-family: 'Raleway';
-font-size: 60px;
-font-weight: 500;
-line-height: 32px;
-text-transform: uppercase;
-}
-.call p{
-    color: white;
-font-family: "Book Antiqua";
-font-size: 30px;
-font-weight: 400;
-line-height: 48px;
-}
-.call__button{
-    width: 300px;
-height: 100px;
-border: 1px solid white;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
+    /* min-width: 1927px; */
+    min-height: 796px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    text-align: center;
 }
 
-.call__button a{
-color: white;
-font-family: 'Raleway';
-font-size: 30px;
-font-weight: 500;
-line-height: 32px;
-text-transform: uppercase;
-text-decoration: none;
+.call h3 {
+    color: white;
+    font-family: "Book Antiqua";
+    font-size: 50px;
+    font-style: italic;
+    line-height: 32px;
+}
+
+.call h2 {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.call p {
+    color: white;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.call__btn {
+    border: 2px solid white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: pointer;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: none;
+}
+
+.call__btn:hover {
+    text-decoration: underline;
+}
+
+/*testimonials____________________________*/
+.testimonials {
+    display: flex;
+    position: relative;
+    margin-bottom: 189px;
+
+}
+
+.testimonials__slide {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.testimonials h3 {
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+.testimonials h2 {
+    color: #010101;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+    letter-spacing: 0.09em;
+}
+
+.testimonials__left {
+    position: absolute;
+
+    background-color: white;
+    top: 80px;
+}
+
+.testimonials__right {
+    position: absolute;
+
+    background-color: white;
+    top: 80px;
+}
+
+
+span .quotes {
+    font-family: "Book Antiqua";
+    font-size: 50px;
+}
+
+span .amanda {
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+span .years {
+    font-family: "Book Antiqua";
+    font-weight: 400;
+}
+
+.testimonials p {
+    color: black;
+    font-family: "Book Antiqua";
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+/*insta__________________________________*/
+
+.insta {}
+
+.insta__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+
+
+}
+
+
+.insta__img {
+    display: block;
+    background-color: white;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.insta__img .image {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.insta__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    /*padding-top: 30px;
+    padding-left: 20px;*/
+    display: block;
+    justify-content: center;
+
+}
+
+.insta__img:hover .insta__overlay {
+    opacity: 0.5;
+}
+
+.insta__text {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+    text-align: center;
+    outline: 1px solid white;
+    outline-offset: -15px;
+    border-radius: -10%;
+    align-items: center;
+    padding-top: 50%;
+}
+
+.insta__text p {
+    color: white;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 32px;
+}
+
+/*form_________________________*/
+
+.form {
+    margin-bottom: -26px;
+    background-image: url(../img/form_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1029px;
+}
+
+.form h3 {
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 30px;
+    font-style: italic;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.form h2 {
+    color: white;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+
+
+.form_input {
+    color: white;
+    font-family: "Book Antiqua";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    display: block;
+
+
+}
+
+.form__row1 {
+    display: flex;
+}
+
+.form__row1 input {
+    width: 469px;
+    height: 56px;
+    opacity: 0.2;
+    margin-bottom: 40px;
+    background-color: none;
+    ;
+}
+
+.form__row2 {
+    display: flex;
+
+}
+
+.form__row2 input {
+    margin-bottom: 40px;
+    width: 469px;
+    height: 56px;
+    opacity: 0.2;
+    background-color: none;
+}
+
+.form__style {
+    padding-left: 20px;
+    color: white;
+    font-family: "Book Antiqua";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.form_in {}
+
+
+
+
+/*footer_________________*/
+.footer {
+    background-image: url(../img/Footer_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 357px;
+    position: relative;
+}
+
+.footer__logo {
+    letter-spacing: 0.9em;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+    top: 170px;
+    left: 726px;
+}
+
+.footer h3 {
+    color: #8c8d8c;
+    font-family: "Book Antiqua";
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 280px;
+}
+
+.footer .span_t {
+    line-height: 32px;
+}
+
+.footer .span_p {
+    line-height: 22px;
 }

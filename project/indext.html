@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mure</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,400i,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootsrtap.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,400i,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="header">
+  <a name="top"></a><div class="header">
     <div class="container">
       <div class="header__navigation">
         <div class="header__social">
@@ -27,44 +28,76 @@
         <div class="header__menunav">
           <div id="header__manunav" class="header__nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="javascript:void(0)">Shop</a>
-            <a href="javascript:void(0)">Gallery </a>
-            <a href="javascript:void(0)">Team</a>
-            <a href="javascript:void(0)">Contacts</a>
+            <div class="header__list">
+              <a href="#shop">Shop</a>
+              <a href="#Gallery">Gallery </a>
+              <a href="#Team">Team</a>
+              <a href="#Contacts">Contacts</a>
+            </div>
           </div>
-
           <div class="header__button"><button class="openbtn" onclick="openNav()">&#9776;</button> </div>
 
         </div>
       </div>
       <div class="header__logo logo">
-        <a href="javascript:void(0)">Mûre</a>
+        <a href="javascript:void(0)" class="header__title animated fadeIn">Mûre</a>
       </div>
       <div class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__item">
-            <div style="img1"><img src="./img/header_slide1.png"> </div>
+        <div class="row">
+          <div class="slider__wrapper">
+            <div class="col col-3">
+              <div class="slider__item">
+                <div class="img1"><img src="./img/header_slide1.png"> </div>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="slider__item">
+                <div class="img1"><img src="./img/header_slide2.png"> </div>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="slider__item">
+                <div class="img1"><img src="./img/header_slide3.png"> </div>
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="slider__item">
+                <div class="img1"><img src="./img/header_slide4.png"> </div>
+              </div>
+            </div>
+
+            <div class="col col-3">
+                <div class="slider__item">
+                  <div style="img1"><img src="./img/header_slide1.png"> </div>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="slider__item">
+                  <div style="img1"><img src="./img/header_slide2.png"> </div>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="slider__item">
+                  <div style="img1"><img src="./img/header_slide3.png"> </div>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="slider__item">
+                  <div style="img1"><img src="./img/header_slide4.png"> </div>
+                </div>
+              </div>
+            
+
           </div>
-          <div class="slider__item">
-            <div style="img1"><img src="./img/header_slide2.png"> </div>
-          </div>
-          <div class="slider__item">
-            <div style="img1"><img src="./img/header_slide3.png"> </div>
-          </div>
-          <div class="slider__item">
-            <div style="img1"><img src="./img/header_slide4.png"> </div>
-          </div>
-          
+          <a class="slider__control slider__control_left" href="javascript:void(0)" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="javascript:void(0)" role="button"></a>
         </div>
-        <a class="slider__control slider__control_left" href="#" role="button"></a>
-        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+
       </div>
-
-
     </div>
   </div>
-  
-  <div class="about">
+
+  <a name="Team"></a><div class="about">
     <div class="container">
       <div class="row">
         <div class="col col-4">
@@ -78,22 +111,34 @@
           <div class="about__left">
             <div class="row">
               <div class="col col-6">
-                <span> - Taste</span><br>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna.
-                <br><br>
-                <span> - Ingredients</span><br>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim ven.
+                <div class="about__lorem">
+                  <span> - Taste</span><br>
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna.
+
+                </div>
+                <div class="about__lorem">
+                  <span> - Ingredients</span><br>
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim ven.
+                </div><br>
               </div>
               <div class="col col-6">
-                <span> - Design</span><br>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna.
-                <br><br>
-                <span> - Benefit</span><br>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+                <div class="about__lorem">
+                  <span> - Design</span><br>
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna.
+                </div>
+
+                <div class="about__lorem">
+                  <span> - Benefit</span><br>
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.<br>
+                </div>
               </div>
             </div>
           </div>
@@ -102,106 +147,293 @@
 
     </div>
   </div>
-   <div class="product"> 
+  <a name="shop"></a><div class="product">
 
     <div class="product__title">
       <h3>Lorem ipsum</h3>
       <h2>Our Products</h2>
     </div>
     <div class="w-100"></div>
-    <div class="product__box">
-      <div class="product__img"> 
+
+    <div class="row product__box">
+      <div class="col col-3">
+        <div class="product__img">
           <a href="javascript:void(0)"><img src="./img/product_1.jpg" alt="Desserts" class="image"></a>
-        <div class="product__overlay">
-          <div class="product__text">
-            <span class="product__price"> $1550</span><br><br><br>
-            <span class="product__name"> Strawberry Tart</span><br><br><br>
-            <span class="product__category">Desserts</span>
+          <div class="product__overlay">
+            <div class="product__text">
+              <span class="product__price"> $15<sup>50</sup></span><br><br><br>
+              <span class="product__name"> Strawberry Tart</span><br><br><br>
+              <span class="product__category">Desserts</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="product__img">
+
+      <div class="col col-3">
+        <div class="product__img">
           <a href="javascript:void(0)"><img src="./img/product_2.jpg" alt="Desserts" class="image"></a>
-        <div class="product__overlay">
-          <div class="product__text">
-            <span class="product__price"> $1550</span><br><br><br>
-            <span class="product__name"> Strawberry Tart</span><br><br><br>
-            <span class="product__category">Desserts</span>
+          <div class="product__overlay">
+            <div class="product__text">
+              <span class="product__price"> $15<sup>50</sup></span><br><br><br>
+              <span class="product__name"> Strawberry Tart</span><br><br><br>
+              <span class="product__category">Desserts</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="product__img">
+
+      <div class="col col-3">
+        <div class="product__img">
           <a href="javascript:void(0)"><img src="./img/product_3.jpg" alt="Desserts" class="image"></a>
-        <div class="product__overlay">
-          <div class="product__text">
-            <span class="product__price"> $1550</span><br><br><br>
-            <span class="product__name"> Strawberry Tart</span><br><br><br>
-            <span class="product__category">Desserts</span>
+          <div class="product__overlay">
+            <div class="product__text">
+              <span class="product__price"> $15<sup>50</sup></span><br><br><br>
+              <span class="product__name"> Strawberry Tart</span><br><br><br>
+              <span class="product__category">Desserts</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="product__img">
+
+      <div class="col col-3">
+        <div class="product__img">
           <a href="javascript:void(0)"><img src="./img/product_4.jpg" alt="Desserts" class="image"></a>
-        <div class="product__overlay">
-          <div class="product__text">
-            <span class="product__price"> $1550</span><br><br><br>
-            <span class="product__name"> Strawberry Tart</span><br><br><br>
-            <span class="product__category">Desserts</span>
+          <div class="product__overlay">
+            <div class="product__text">
+              <span class="product__price"> $15<sup>50</sup></span><br><br><br>
+              <span class="product__name"> Strawberry Tart</span><br><br><br>
+              <span class="product__category">Desserts</span>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
 
-  </div> 
-
-<div class="partners">
-  <div class="container">
-      <div class="partners__title">
-          <h3>Partners</h3>
-          <h2>Check our Partners</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
-          </p>
-        </div>
-        <div class="partners__scroll">
-            <a href="javascript:void(0)"> <img src="./img/header_slide1.png"></a>
-            <a href="javascript:void(0)"> <img src="./img/header_slide2.png"></a>
-            <a href="javascript:void(0)"> <img src="./img/header_slide3.png"></a>
-            <a href="javascript:void(0)"> <img src="./img/header_slide4.png"></a>
-        </div>
   </div>
 
-</div>
+  </div>
 
-<div class="call">
-  <div class="container">
+  <div class="partners">
+    <div class="container">
+      <div class="partners__title">
+        <h3>Partners</h3>
+        <h2>Check our Partners</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+        </p>
+      </div>
+      <div class="partners__scroll">
+        <a href="javascript:void(0)"> <img src="./img/partners_1.png"></a>
+        <a href="javascript:void(0)"> <img src="./img/partners_2.png"></a>
+        <a href="javascript:void(0)"> <img src="./img/partners_3.png"></a>
+        <a href="javascript:void(0)"> <img src="./img/partners_4.png"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <a name="Contacts"></a><div class="call">
+    <div class="container">
       <h3>Best Desserts</h3>
       <h2>For Your special occasions</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et
+        dolore
       </p>
-      <div class="call__button">
-          <a href="javascript:void(0)"> Call Back</a>
-      </div>
+      <form>
+
+        <a href="javascript:void(0)"><button class="call__btn"> Call Back</button></a>
+
+
+      </form>
+    </div>
   </div>
-</div>
+
+  <div class="testimonials">
+    <div class="container">
+      <h3>Testimonials</h3>
+      <h2>What People Say About Us</h2>
+      <div class="row">
+        <div class="testimonials__slide">
+          <div class="col col-7">
+            <img src="./img/testimonials_1.png">
+          </div>
+          <div class="col col-5">
+            <div class="testimonials__left">
+              <p>
+                <span quotes>“</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nos trud
+              </p>
+              <p><span amanda>Amanda, <span years>26</span> y.o</span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="testimonials__slide">
+          <div class="col col-5">
+            <div class="testimonials__right">
+              <p>
+                <span quotes>“</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nos trud
+              </p>
+              <p><span amanda>Amanda, <span years>26</span> y.o</span></p>
+            </div>
+          </div>
+
+          <div class="col col-7">
+            <img src="./img/testimonials_2.png">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <a name="Gallery"></a><div class="insta">
+    <div class="row insta__box">
+      <div class="insta__img col-3">
+
+        <a href="javascript:void(0)"><img src="./img/insta_1.jpg" alt="@mure.desserts" class="image"></a>
+        <div class="insta__overlay">
+          <div class="insta__text">
+            <p> @mure.desserts</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="insta__img col-3">
+
+        <a href="javascript:void(0)"><img src="./img/insta_2.jpg" alt="@mure.desserts" class="image"></a>
+        <div class="insta__overlay">
+          <div class="insta__text">
+            <p> @mure.desserts</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="insta__img col-3">
+
+        <a href="javascript:void(0)"><img src="./img/insta_3.jpg" alt="@mure.desserts" class="image"></a>
+        <div class="insta__overlay">
+          <div class="insta__text">
+            <p> @mure.desserts</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="insta__img col-3">
+
+        <a href="javascript:void(0)"><img src="./img/insta_4.jpg" alt="@mure.desserts" class="image"></a>
+        <div class="insta__overlay">
+          <div class="insta__text">
+            <p> @mure.desserts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="container">
+      <h3>Lorem ipsum</h3>
+      <h2>Order Delivery</h2>
+      <div class="row form__row1 no-gutters">
+        <div class="col col-6">
+          <div class="form__in"><input type="text" class="form__style" placeholder="First Name*"></div>
+        </div>
+        <div class="col col-6">
+          <div class="form__in"><input type="text" class="form__style" placeholder="First Name*"></div>
+        </div>
+      </div>
+      <div class="row form__row2 no-gutters">
+        <div class="col col-6">
+          <div class="form__in"><input type="email" class="form__style" placeholder="Telephone*"></div>
+        </div>
+        <div class="col col-6">
+          <div class="form__in"><input type="text" class="form__style" placeholder="Email*"></div>
+        </div>
+      </div>
+      <div class="row form__style">
+        <div class="col col-4 form__pr">
+          <select name="select" id="" placeholder="Select Product">
+            <option value="1">Lorem ipsum</option>
+            <option value="2">Lorem ipsum</option>
+            <option value="3">Lorem ipsum</option>
+          </select>
+        </div>
+        <div class="col col-3 form__num">
+          <select name="select" id="">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col col-4">
+          <select name="select" id="">
+            <option value="1">Lorem ipsum</option>
+            <option value="2" selected>Lorem ipsum</option>
+            <option value="3">Lorem ipsum</option>
+          </select>
+        </div>
+      </div>
+      <div class="row form__style">
+        <div class="col col-3">
+          <select name="select" id="">
+            <option value="1">Lorem ipsum</option>
+            <option value="2" selected>Lorem ipsum</option>
+            <option value="3">Lorem ipsum</option>
+          </select>
+        </div>
+        <div class="col col-3">
+          <div class="form__area form_input"><textarea name="message" id="" placeholder="City*"></textarea></div>
+        </div>
+        <div class="col col-4">
+          <div class="form__area form_input"><textarea name="message" id="" placeholder="Street Address*"></textarea></div>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
 
 
 
+    </div>
+  </div>
 
+  <div class="footer">
+    <div class="container">
+      <div class="footer__logo logo">
+        <a href="#top">Mûre</a>
+      </div>
+      <h3>
+        <span_t>T</span>hermes of Use and Privacy Policy<span_p>©All Rights Reserved.</span>
+      </h3>
+    </div>
+  </div>
 
 
   <script>
     /* Set the width of the sidebar to 250px (show it) */
     function openNav() {
       document.getElementById("header__manunav").style.width = "100%";
+      document.getElementsByClassName('openbtn')[0].style.visibility = 'hidden';
     }
 
     /* Set the width of the sidebar to 0 (hide it) */
     function closeNav() {
       document.getElementById("header__manunav").style.width = "0";
+      document.getElementsByClassName('openbtn')[0].style.visibility = 'visible';
+
     }
 
 
