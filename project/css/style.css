@@ -953,7 +953,7 @@ span .years {
     text-decoration: underline;
 }
 
-input::-moz-placeholder {
+/*input::-moz-placeholder {
     color: white;
 }
 
@@ -971,7 +971,7 @@ input::-webkit-input-placeholder {
     color: black;
     background: white;
 }
-
+*/
 
 /*footer_________________*/
 .footer {
