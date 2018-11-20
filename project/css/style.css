@@ -7,9 +7,10 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    /* background-image: url('./DBpng.png');*/
+     background-image: url('./DBpng.png');
     max-width: 100%;
     background-position: top;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -20,13 +21,10 @@ body {
 
 }
 
-.header .container {
-   
-
-}
+.header .container {}
 
 .header {
-    background-image: url(../img/Header_background2.png);
+   /* background-image: url(../img/Header_background2.png);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,9 +32,10 @@ body {
     margin-bottom: 222px;
     position: relative;
 }
-.header__title{
+
+.header__title {
     animation-duration: 4s;
-  animation-delay: 0.2s;
+    animation-delay: 0.8s;
 }
 
 .header__navigation {
@@ -60,7 +59,7 @@ body {
 .header__logo {
     position: absolute;
     top: 323px;
-    left: 684px;
+    left: 1067px;
     letter-spacing: 0.9em;
 }
 
@@ -93,7 +92,7 @@ body {
 .header__nav a {
     float: left;
     text-align: right;
-    padding: 8px 8px 8px 8px;
+    padding: 8px 39px 44px 5px;
     text-decoration: none;
     display: block;
     justify-content: flex-end;
@@ -101,10 +100,9 @@ body {
     transition: 0.3s;
     color: #8c8d8c;
     font-family: "Book Antiqua";
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 400;
     line-height: 22px;
-
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -117,9 +115,9 @@ body {
 .header__nav .closebtn {
     position: absolute;
     top: 0;
-    top: 30px;
-    right: 50px;
-    font-size: 60px;
+    top: 39px;
+    right: 54px;
+    font-size: 72px;
     margin-left: 50px;
 }
 
@@ -132,7 +130,7 @@ body {
     border: none;
     position: absolute;
     top: 32px;
-    right: 50px;
+    right: 73px;
 }
 
 .openbtn :active {
@@ -156,7 +154,8 @@ body {
     justify-content: space-around;
     align-items: center;
     top: 173px;
-    left: -5px;
+    left: -23px;
+    letter-spacing: 0.12em;
 }
 
 
@@ -187,8 +186,8 @@ body {
 }
 
 .header__list {
-    padding-right: 118px;
-    
+    padding-right: 174px;
+
 }
 
 /*slide*/
@@ -297,6 +296,7 @@ body {
     font-size: 30px;
     font-style: italic;
     margin-top: 0;
+    margin-left: 12px;
 }
 
 .about__title h2 {
@@ -305,7 +305,7 @@ body {
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-left: -20px;
+    margin-left: -9px;
     margin-top: -4px;
     letter-spacing: 0.1em;
 }
@@ -526,7 +526,7 @@ body {
 
 /*call_______________*/
 .call {
-    background-image: url(../img/call.png);
+    /*background-image: url(../img/call.png);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -545,6 +545,9 @@ body {
     font-size: 50px;
     font-style: italic;
     line-height: 32px;
+    margin-top: -3px;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .call h2 {
@@ -554,6 +557,7 @@ body {
     font-weight: 500;
     line-height: 32px;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .call p {
@@ -562,11 +566,15 @@ body {
     font-size: 30px;
     font-weight: 400;
     line-height: 48px;
+   
+    letter-spacing: 0.12em;
+    text-align: center;
+    margin-bottom: 62px;
 }
 
 .call__btn {
     border: 2px solid white;
-    padding: 14px 28px;
+    padding: 30px 54px;
     font-size: 16px;
     cursor: pointer;
     cursor: pointer;
@@ -576,6 +584,8 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     background: none;
+    letter-spacing: 0.09em;
+    margin-top: -5px;
 }
 
 .call__btn:hover {
@@ -665,14 +675,16 @@ span .years {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    height: 540px;
     position: relative;
-
-
 }
 
 
 .insta__img {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-color: white;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -680,11 +692,19 @@ span .years {
     cursor: pointer;
 }
 
-.insta__img .image {
 
+.insta__item {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+}
 
+.insta__item ::before {
+    content: '';
+    display: block;
 }
 
 .insta__overlay {
@@ -723,7 +743,9 @@ span .years {
     border-radius: -10%;
     align-items: center;
     padding-top: 50%;
+
 }
+
 
 .insta__text p {
     color: white;
@@ -737,11 +759,12 @@ span .years {
 
 .form {
     margin-bottom: -26px;
-    background-image: url(../img/form_bg.jpg);
+   /* background-image: url(../img/form_bg.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 1029px;
+    color: white;
 }
 
 .form h3 {
@@ -751,7 +774,9 @@ span .years {
     font-style: italic;
     line-height: 32px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 65px;
+    letter-spacing: 0.08em;
+
 }
 
 .form h2 {
@@ -763,6 +788,7 @@ span .years {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.09em;
+    margin-bottom: 99px;
 }
 
 
@@ -788,7 +814,6 @@ span .years {
     opacity: 0.2;
     margin-bottom: 40px;
     background-color: none;
-    ;
 }
 
 .form__row2 {
@@ -805,22 +830,131 @@ span .years {
 }
 
 .form__style {
+    margin-bottom: 40px;
+    height: 56px;
+    background-color: none;
+    opacity: 0.2;
+    padding-left: 34px;
+    font-family: "Book Antiqua";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+/*.form__num{
+    width: 170px;
+    height: 56px;
+    opacity: 0.2;
+    margin-bottom: 40px;
+    background-color: none; 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
     padding-left: 20px;
+    color: white;
+    padding-left: 20px;
+}*/
+.form__total-box {
+    display: block;
+    height: 56px;
+    width: 270px;
+    opacity: 0.2;
+    background-color: #cdcdcd;
+    margin-left: 44px;
+
+}
+
+.form__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     color: white;
     font-family: "Book Antiqua";
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
+    margin-right: 105px;
 }
 
-.form_in {}
+.form__line3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap
+}
+
+.form__line4 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap
+}
+
+.form__s {
+    width: 370px;
+}
+.form__package{
+    margin-left: -127px;
+}
+
+.form__country {
+    width: 270px;
+    
+}
+.form__city{
+    width: 270px; 
+    margin-left: -64px;
+}
+.form__street{
+    width: 370px;
+    margin-left: -128px;
+}
+
+.form__n {
+    width: 170px;
+    text-align: center;
+    margin-left: 36px;
+    padding-left: 62px;
+}
+.form__field{
+    padding-left: 91px;
+}
+.form p{
+margin-top: 12px;
+letter-spacing: 0.03em;
+}
+.form__btn{
+    border: 2px solid white;
+    padding: 30px 91px;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: pointer;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: none;
+    letter-spacing: 0.09em;
+    margin-top: 65px;
+    margin-left: 348px;
+}
+
+.call__btn:hover {
+    text-decoration: underline;
+}  
+
+
 
 
 
 
 /*footer_________________*/
 .footer {
-    background-image: url(../img/Footer_bg.png);
+   /* background-image: url(../img/Footer_bg.png);*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -828,14 +962,19 @@ span .years {
     position: relative;
 }
 
-.footer__logo {
-    letter-spacing: 0.9em;
+.footer__logo a{
+    letter-spacing: 0.1em;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 111px;
+    left: 821px;
     text-align: center;
-    top: 170px;
-    left: 726px;
+    color: #fdfefd;
+    font-family: 'Raleway';
+    font-size: 85px;
+    font-weight: 200;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer h3 {
@@ -844,7 +983,8 @@ span .years {
     font-size: 25px;
     font-weight: 400;
     text-align: center;
-    padding-top: 280px;
+    padding-top: 203px;
+    letter-spacing: 0.09em;
 }
 
 .footer .span_t {
