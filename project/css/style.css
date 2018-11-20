@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-     background-image: url('./DBpng.png');
+   /* background-image: url('./DBpng.png');*/
     max-width: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
 .header .container {}
 
 .header {
-   /* background-image: url(../img/Header_background2.png);*/
+    background-image: url(../img/Header_background2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -526,7 +526,7 @@ body {
 
 /*call_______________*/
 .call {
-    /*background-image: url(../img/call.png);*/
+    background-image: url(../img/call.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -566,7 +566,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     line-height: 48px;
-   
+
     letter-spacing: 0.12em;
     text-align: center;
     margin-bottom: 62px;
@@ -759,7 +759,7 @@ span .years {
 
 .form {
     margin-bottom: -26px;
-   /* background-image: url(../img/form_bg.jpg);*/
+    background-image: url(../img/form_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -896,19 +896,22 @@ span .years {
 .form__s {
     width: 370px;
 }
-.form__package{
+
+.form__package {
     margin-left: -127px;
 }
 
 .form__country {
     width: 270px;
-    
+
 }
-.form__city{
-    width: 270px; 
+
+.form__city {
+    width: 270px;
     margin-left: -64px;
 }
-.form__street{
+
+.form__street {
     width: 370px;
     margin-left: -128px;
 }
@@ -919,14 +922,17 @@ span .years {
     margin-left: 36px;
     padding-left: 62px;
 }
-.form__field{
+
+.form__field {
     padding-left: 91px;
 }
-.form p{
-margin-top: 12px;
-letter-spacing: 0.03em;
+
+.form p {
+    margin-top: 12px;
+    letter-spacing: 0.03em;
 }
-.form__btn{
+
+.form__btn {
     border: 2px solid white;
     padding: 30px 91px;
     font-size: 16px;
@@ -945,16 +951,31 @@ letter-spacing: 0.03em;
 
 .call__btn:hover {
     text-decoration: underline;
-}  
+}
 
+input::-moz-placeholder {
+    color: white;
+}
 
+input::-webkit-input-placeholder {
+    color: white;
+}
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: black;
+    background: white;
+}
 
+::selection {
+    color: black;
+    background: white;
+}
 
 
 /*footer_________________*/
 .footer {
-   /* background-image: url(../img/Footer_bg.png);*/
+    background-image: url(../img/Footer_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -962,7 +983,7 @@ letter-spacing: 0.03em;
     position: relative;
 }
 
-.footer__logo a{
+.footer__logo a {
     letter-spacing: 0.1em;
     position: absolute;
     top: 111px;
