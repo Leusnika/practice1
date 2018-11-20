@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-   /* background-image: url('./DBpng.png');*/
+   /*background-image: url('./DBpng.png');*/
     max-width: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -765,6 +765,7 @@ span .years {
     background-size: cover;
     min-height: 1029px;
     color: white;
+
 }
 
 .form h3 {
@@ -793,143 +794,43 @@ span .years {
 
 
 
-.form_input {
+input {
     color: white;
     font-family: "Book Antiqua";
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     display: block;
-
-
-}
-
-.form__row1 {
-    display: flex;
-}
-
-.form__row1 input {
-    width: 469px;
     height: 56px;
-    opacity: 0.2;
+    background-color: rgba(31, 31, 30, 0.2);
     margin-bottom: 40px;
-    background-color: none;
-}
-
-.form__row2 {
-    display: flex;
-
-}
-
-.form__row2 input {
-    margin-bottom: 40px;
-    width: 469px;
-    height: 56px;
-    opacity: 0.2;
-    background-color: none;
-}
-
-.form__style {
-    margin-bottom: 40px;
-    height: 56px;
-    background-color: none;
-    opacity: 0.2;
     padding-left: 34px;
+    width: 100%;
+}
+select{
+    color: white;
     font-family: "Book Antiqua";
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
-
-}
-
-/*.form__num{
-    width: 170px;
-    height: 56px;
-    opacity: 0.2;
-    margin-bottom: 40px;
-    background-color: none; 
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    padding-left: 20px;
-    color: white;
-    padding-left: 20px;
-}*/
-.form__total-box {
     display: block;
     height: 56px;
-    width: 270px;
-    opacity: 0.2;
-    background-color: #cdcdcd;
-    margin-left: 44px;
-
-}
-
-.form__total {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: white;
-    font-family: "Book Antiqua";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    margin-right: 105px;
-}
-
-.form__line3 {
-    display: flex;
-    flex-direction: row;
+    background-color: rgba(31, 31, 30, 0.2);
+    margin-bottom: 40px;
+    padding-left: 34px; 
     width: 100%;
-    justify-content: space-around;
-    flex-wrap: nowrap
 }
 
-.form__line4 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: nowrap
-}
-
-.form__s {
-    width: 370px;
-}
-
-.form__package {
-    margin-left: -127px;
-}
-
-.form__country {
-    width: 270px;
-
-}
-
-.form__city {
-    width: 270px;
-    margin-left: -64px;
-}
-
-.form__street {
-    width: 370px;
-    margin-left: -128px;
-}
-
-.form__n {
-    width: 170px;
-    text-align: center;
-    margin-left: 36px;
-    padding-left: 62px;
-}
-
-.form__field {
-    padding-left: 91px;
-}
 
 .form p {
     margin-top: 12px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.09em;
+    margin-right: 40px;
+    color: white;
+font-family: "Book Antiqua";
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
 }
 
 .form__btn {
@@ -943,17 +844,20 @@ span .years {
     font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
-    background: none;
+    background-color: rgba(31, 31, 30, 0.2);
     letter-spacing: 0.09em;
-    margin-top: 65px;
-    margin-left: 348px;
+    margin-top: 96px;
+    margin-left: 437px;
 }
 
-.call__btn:hover {
+select .form__num{
+    padding-left: 40px;
+}
+.form__btn:hover {
     text-decoration: underline;
 }
 
-/*input::-moz-placeholder {
+input::-moz-placeholder {
     color: white;
 }
 
@@ -962,32 +866,50 @@ input::-webkit-input-placeholder {
 }
 
 ::-moz-selection {
-    /* Code for Firefox */
-    color: black;
-    background: white;
+
+    background-color: rgba(31, 31, 30, 0.2);
+    color: white;
 }
 
 ::selection {
-    color: black;
-    background: white;
+    background-color: rgba(31, 31, 30, 0.2);
+    color: white;
 }
-*/
+.form__total{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.form__total-box{
+    display: block;
+    width: 270px;
+    height: 56px;
+    background-color: rgba(228, 212, 212, 0.2);
+}
+
 
 /*footer_________________*/
 .footer {
-    background-image: url(../img/Footer_bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     min-height: 357px;
     position: relative;
+    background-color: black;
+    border-top: solid 0.1px white;
+    display: flex;
+}
+
+.footer__inf{
+    padding-top: 136px;
+}
+
+.footer__logo{
+text-align: center;
+margin-bottom: 48px;
+margin-left: -277px;
 }
 
 .footer__logo a {
     letter-spacing: 0.1em;
     position: absolute;
-    top: 111px;
-    left: 821px;
     text-align: center;
     color: #fdfefd;
     font-family: 'Raleway';
@@ -1004,7 +926,6 @@ input::-webkit-input-placeholder {
     font-size: 25px;
     font-weight: 400;
     text-align: center;
-    padding-top: 203px;
     letter-spacing: 0.09em;
 }
 
